@@ -1,0 +1,131 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 900
+    length: 212
+    placeholder_text: "//To Do: Implement Merge Sort"
+    initial_state:
+      length: 29
+      offset: 900
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |-
+      //break array into individual elements
+              int mid= start + (end-start)/2;
+              if(start<end)
+              {
+                  mergeSortHelper(data, start, mid);
+                  mergeSortHelper(data, mid+1, end);
+              }
+              else
+              {   return;  }
+
+              //merge together
+
+              // Copy both parts into the helper array
+              ArrayList helper = (ArrayList) data.clone();
+
+              int start1 = start;
+              int start2 = mid+1;
+              // Copy the smallest values from either the left or the right side back
+              // to the original array
+              while (start <= end) {
+                  if ((Double) helper.get(start1) <= (Double) helper.get(start2)) {
+                      data.set(start, (Double) helper.get(start1));
+                      if(start1 < mid)
+                          start1++;
+                      else
+                          helper.set(start1, 100.0);
+                  } else {
+                      data.set(start, (Double) helper.get(start2));
+                      if( start2 < end)
+                          start2++;
+                      else
+                          helper.set(start2, 100.0);
+                  }
+                  start++;
+              }
+  text: |-
+    import java.lang.reflect.Array;
+    import java.util.ArrayList;
+
+    public class Task {
+
+        static ArrayList data = new ArrayList();
+
+        public static void main(String[] args)
+        {
+            createData();
+
+            mergeSort(data);
+
+            printData();
+        }
+
+
+        public static void createData()
+        {
+            for(int i = 0; i < 10; i++)    //add 10 random doubles
+            { data.add(Math.floor(Math.random()*100)/1.0); }
+        }
+
+        public static void printData()
+        {
+            for(int i = 0; i < data.size(); i++)   //print out elements
+            { System.out.print(data.get(i).toString().substring(0,data.get(i).toString().indexOf(".")) + " "); }
+        }
+
+        public static ArrayList<Double> mergeSort(ArrayList<Double> data)
+        {
+            mergeSortHelper(data, 0, data.size()-1);
+            return data;
+        }
+
+
+        public static void mergeSortHelper(ArrayList<Double> data, int start, int end)
+        {
+            //To Do: Implement Merge Sort
+
+        }
+
+
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |
+    import org.junit.Assert;
+
+    import java.util.ArrayList;
+
+    public class Test {
+
+        @org.junit.Test public void testSorting() {
+
+            //make testing data
+            ArrayList<Double> testData = new ArrayList<>();
+            for(int i = 0; i < 100; i++)
+            { testData.add(Math.random()); }
+
+            //make sure resulting array is sorted
+            ArrayList<Double> sorted = Task.mergeSort((ArrayList<Double>) testData.clone());
+
+            for(int i = 1; i < sorted.size(); i++)
+            {
+                if(sorted.get(i-1) > sorted.get(i))
+                {   Assert.fail("Merge Sort Failed");}
+            }
+
+
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 12 Nov 2022 12:57:57 UTC"
+record: -1

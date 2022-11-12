@@ -1,0 +1,122 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 736
+    length: 306
+    placeholder_text: "//To Do: Implement Insertion Sort"
+    initial_state:
+      length: 33
+      offset: 736
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |2-
+              int i, j;
+              for(i = 1; i < data.size(); i++) {
+                  j=i;
+                  while(j >0 && data.get(j-1) > data.get(j)) {
+                      swapElements(data, j-1, j);
+                      j--;
+                  }
+              }
+  - offset: 1340
+    length: 115
+    placeholder_text: //implement code to swap the elements at index1 and index 2
+      in the ArrayList data
+    initial_state:
+      length: 81
+      offset: 1067
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |2-
+              double temp = data.get(index1);
+              data.set(index1, data.get(index2));
+              data.set(index2, temp);
+  text: |-
+    import java.lang.reflect.Array;
+    import java.util.ArrayList;
+
+    public class Task {
+
+        static ArrayList data = new ArrayList();
+
+        public static void main(String[] args)
+        {
+            createData();
+
+            insertionSort(data);
+
+            printData();
+        }
+
+
+        public static void createData()
+        {
+            for(int i = 0; i < 10; i++)    //add 10 random doubles
+            { data.add(Math.floor(Math.random()*100)/1.0); }
+        }
+
+        public static void printData()
+        {
+            for(int i = 0; i < data.size(); i++)   //print out elements
+            { System.out.print(data.get(i).toString().substring(0,data.get(i).toString().indexOf(".")) + " "); }
+
+
+        }
+
+
+        public static ArrayList<Double> insertionSort(ArrayList<Double> data)
+        {
+    //To Do: Implement Insertion Sort
+
+            return data;
+        }
+
+        //Helper method that swaps two elements in an array
+        //@param data: ArrayList where elements are
+        //@param index1 and index2: indeces of the two elements to be swapped
+        public static void swapElements(ArrayList<Double> data, int index1, int index2)
+        {
+    //implement code to swap the elements at index1 and index 2 in the ArrayList data
+        }
+
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |
+    import org.junit.Assert;
+
+    import java.util.ArrayList;
+
+    public class Test {
+
+        @org.junit.Test public void testSorting() {
+
+            //make testing data
+            ArrayList<Double> testData = new ArrayList<>();
+            for(int i = 0; i < 100; i++)
+            { testData.add(Math.random()); }
+
+            //make sure resulting array is sorted
+            ArrayList<Double> sorted = Task.insertionSort((ArrayList<Double>) testData.clone());
+
+            for(int i = 1; i < sorted.size(); i++)
+            {
+                if(sorted.get(i-1) > sorted.get(i))
+                {   Assert.fail("Insertion Sort Failed");}
+            }
+
+
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 12 Nov 2022 12:57:08 UTC"
+record: -1

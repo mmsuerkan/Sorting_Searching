@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CS1_Sorting&amp;Searching.iml" filepath="$PROJECT_DIR$/.idea/modules/CS1_Sorting&amp;Searching.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Bubble Sort/CS1_Sorting&amp;Searching.Sorting-Bubble_Sort.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Insertion Sort/CS1_Sorting&amp;Searching.Sorting-Insertion_Sort.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Merge Sort/CS1_Sorting&amp;Searching.Sorting-Merge_Sort.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Quick Sort/CS1_Sorting&amp;Searching.Sorting-Quick_Sort.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Sorting/Selection Sort/CS1_Sorting&amp;Searching.Sorting-Selection_Sort.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.iml" filepath="$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.main.iml" filepath="$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.test.iml" filepath="$PROJECT_DIR$/.idea/modules/util/CS1_Sorting&amp;Searching.util.test.iml" />
+    </modules>
+  </component>
+</project>

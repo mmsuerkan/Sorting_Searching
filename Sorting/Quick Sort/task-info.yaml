@@ -1,0 +1,125 @@
+type: edu
+files:
+- name: src/Task.java
+  visible: true
+  placeholders:
+  - offset: 892
+    length: 184
+    placeholder_text: "//To Do: Implement Quick Sort"
+    initial_state:
+      length: 29
+      offset: 892
+    initialized_from_dependency: false
+    selected: true
+    status: Solved
+    encrypted_possible_answer: |2-
+        if (low < high) {
+                  double pivot = data.get(high);
+                  int i = (low - 1); // index of smaller element
+                  for (int j = low; j < high; j++) {
+                      // If current element is smaller than or
+                      // equal to pivot
+                      if (data.get(j) <= pivot) {
+                          i++;
+                          swapElements(data, i, j);
+                      }
+                  }
+
+                  // swap arr[i+1] and arr[high] (or pivot)
+                  swapElements(data, i + 1, high);
+
+                  i = i + 1;
+
+
+                  // Recursively sort elements before
+                  // partition and after partition
+                  quickSortHelper(data, low, i - 1);
+                  quickSortHelper(data, i + 1, high);
+              }
+  text: |-
+    import java.lang.reflect.Array;
+    import java.util.ArrayList;
+
+    public class Task {
+
+        static ArrayList data = new ArrayList();
+
+        public static void main(String[] args)
+        {
+            createData();
+
+            quickSort(data);
+
+            printData();
+        }
+
+
+        public static void createData()
+        {
+            for(int i = 0; i < 10; i++)    //add 10 random doubles
+            { data.add(Math.floor(Math.random()*100)/1.0); }
+        }
+
+        public static void printData()
+        {
+            for(int i = 0; i < data.size(); i++)   //print out elements
+            { System.out.print(data.get(i).toString().substring(0,data.get(i).toString().indexOf(".")) + " "); }
+        }
+
+        public static ArrayList<Double> quickSort(ArrayList<Double> data)
+        {
+            quickSortHelper(data, 0, data.size()-1);
+            return data;
+        }
+
+        public static void quickSortHelper(ArrayList<Double> data, int low, int high) {
+          //To Do: Implement Quick Sort
+        }
+
+        //Helper method that swaps two elements in an array
+        //@param data: ArrayList where elements are
+        //@param index1 and index2: indeces of the two elements to be swapped
+        public static void swapElements(ArrayList<Double> data, int index1, int index2)
+        {
+            double temp = data.get(index1);
+            data.set(index1, data.get(index2));
+            data.set(index2, temp);
+        }
+
+    }
+  learner_created: false
+- name: test/Test.java
+  visible: false
+  text: |
+    import org.junit.Assert;
+
+    import java.util.ArrayList;
+
+    public class Test {
+
+        @org.junit.Test public void testSorting() {
+
+            //make testing data
+            ArrayList<Double> testData = new ArrayList<>();
+            for(int i = 0; i < 100; i++)
+            { testData.add(Math.random()); }
+
+            //make sure resulting array is sorted
+            ArrayList<Double> sorted = Task.quickSort((ArrayList<Double>) testData.clone());
+
+            for(int i = 1; i < sorted.size(); i++)
+            {
+                if(sorted.get(i-1) > sorted.get(i))
+                {   Assert.fail("Quick Sort Failed");}
+            }
+
+
+        }
+
+    }
+  learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 12 Nov 2022 12:58:53 UTC"
+record: -1
